@@ -3,6 +3,9 @@
     --second-blue:#4CC9FE;
     --third-yellow:#F5F4B3;
     --fourth-yellow:#FFFECB;
+    /* --dark-theme:#1b1b1b; */
+    --dark-theme:#262626;
+    --light-theme:#eeeeee;
     --font:'Poppins';
 }
 
@@ -10,6 +13,7 @@ body {
     font-family: var(--font), sans-serif;
     margin: 0;
     padding: 0;
+    background-color: var(--dark-theme);
 }
 
 main {
@@ -28,13 +32,14 @@ main {
     justify-content: space-between;
     align-items: center;
     padding: 20px 7%;
-    background-color: var(--second-blue);
+    background-color: var(--dark-theme);
     border-bottom: 1px solid #0D7377;
+    border-bottom: 1px solid var(--light-theme);
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 9999;
+    z-index: 99999;
 }
 
 .navbarLogo{
@@ -76,8 +81,8 @@ main {
 /* Container Jumbo Start */
 .containerJumbo{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    /* flex-direction: row; */
+    /* justify-content: space-between; */
 }
 
 .containerIntro{
@@ -87,6 +92,7 @@ main {
     align-items: center;
     flex-direction: column;
     background-color: var(--third-yellow);  
+    padding: 20px;
     margin: 0px 20px;
     border-radius: 20px;
 }
@@ -249,6 +255,7 @@ main {
 /* PROJECT START */
 #projects{
     text-align: center;
+    color: var(--light-theme);
 }
 
 .containerContent{
