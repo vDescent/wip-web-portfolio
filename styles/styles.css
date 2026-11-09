@@ -91,7 +91,8 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: var(--third-yellow);  
+    /* background-color: var(--third-yellow);   */
+    background-color: var(--light-theme);  
     padding: 20px;
     margin: 0px 20px;
     border-radius: 20px;
@@ -167,7 +168,8 @@ main {
     flex-direction: column;
     align-items: center;
     margin: 50px 0 0 0;
-    background-color: var(--third-yellow);
+    /* background-color: var(--third-yellow); */
+    background-color: var(--light-theme);
     border-radius: 20px;
 }
 
@@ -253,7 +255,7 @@ main {
 /* Skill END */
 
 /* PROJECT START */
-#projects{
+#mainProjects{
     text-align: center;
     color: var(--light-theme);
 }
@@ -273,7 +275,10 @@ main {
     flex-direction: column;
     justify-content: center;
     /* align-items: center; */
-    background-color: var(--first-blue);
+    /* background-color: var(--first-blue); */
+    color: var(--light-theme);
+    background-color: var(--dark-theme);
+    border: solid 2px var(--light-theme);
     border-radius: 20px;
     padding: 5px 30px;
 }
@@ -284,7 +289,9 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color:var(--third-yellow);
+    /* background-color:var(--third-yellow); */
+    background-color:var(--light-theme);
+    border: solid 2px var(--dark-theme);
     border-radius: 20px;
 }
 
@@ -390,7 +397,9 @@ footer{
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
-    background-color: var(--first-blue);
+    color: var(--light-theme);
+    border-top: solid 2px var(--light-theme);
+    background-color: var(--dark-theme);
 }
 
 /* FOOTER END */
