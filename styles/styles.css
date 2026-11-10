@@ -76,6 +76,30 @@ main {
     text-decoration: none;
     font-family: var(--font);
 }
+.btnContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 20px;
+    padding: 20px;
+    border: solid 2px var(--light-theme);
+    color: var(--light-theme);
+    border-radius: 20px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+}
+
+.btnContent:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: solid 2px var(--dark-theme);
+    color: var(--dark-theme);
+    background-color: var(--light-theme);
+}
 
 
 /* Container Jumbo Start */
@@ -181,7 +205,8 @@ main {
     align-items: center;
     margin: 50px 0 0 0;
     /* background-color: var(--third-yellow); */
-    background-color: var(--light-theme);
+    background-color: var(--dark-theme);
+    border: solid 2px var(--light-theme);
     border-radius: 20px;
 }
 
@@ -221,8 +246,10 @@ main {
 .skillList{
     display: flex;
     flex-direction: column;
-    background-color: white;
-    border-radius: 10px;
+    background-color: var(--dark-theme);
+    color: var(--light-theme);
+    /* border-bottom: solid 2px var(--light-theme); */
+    /* border-radius: 10px; */
     padding: 10px;
 }
 
@@ -247,7 +274,7 @@ main {
 
 .skillBar {
     height: 5px;
-    background: #ddd;
+    background: var(--dark-theme);
     border-radius: 5px;
     overflow: hidden;
     margin-top: 10px;
@@ -255,7 +282,7 @@ main {
 
 .skillMeter {
     height: 100%;
-    background: var(--first-blue);
+    background: var(--light-theme);
     width: 0%;
     transition: width 0.5s ease-in-out;
 }
@@ -269,6 +296,17 @@ main {
 /* PROJECT START */
 #mainProjects{
     text-align: center;
+    /* color: var(--light-theme); */
+}
+
+.text-light{
+    text-align: center;
+    color: var(--light-theme);
+}
+
+.text-no-margin{
+    text-align: center;
+    margin: 0;
     color: var(--light-theme);
 }
 
@@ -279,6 +317,12 @@ main {
     width: 100%;
     max-width: 1200px;
     margin: 20px 0px;
+}
+
+.containerContentBtn{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
 }
 
 #content{
@@ -293,6 +337,7 @@ main {
     border: solid 2px var(--light-theme);
     border-radius: 20px;
     padding: 5px 30px;
+    margin: 0 8px;
 }
 
 .containerContent aside{
@@ -302,8 +347,9 @@ main {
     align-items: center;
     justify-content: center;
     /* background-color:var(--third-yellow); */
-    background-color:var(--light-theme);
-    border: solid 2px var(--dark-theme);
+    background-color:var(--dark-theme);
+    border: solid 2px var(--light-theme);
+    color: var(--light-theme);
     border-radius: 20px;
 }
 
@@ -321,9 +367,18 @@ main {
     border-radius: 10px;
 } */
 
+.imgLevelen{
+    /* min-width: 100%; */
+    width: 100px;
+    height: 100px;
+    /* max-height: 50%; */
+}
+
 .imgLogo{
     position: relative;
     display: inline-block;
+    /* min-height: 50%; */
+    /* height: 100%; */
     width: 10%;
     height: auto;
     margin: 0 10px;
@@ -414,6 +469,11 @@ footer{
     background-color: var(--dark-theme);
 }
 
+.h1-footer{
+    color: var(--light-theme);
+    margin: 0;
+    margin-top: 8px;
+}
 /* FOOTER END */
 
 
